@@ -201,7 +201,7 @@ $textX = ceil( ( $width - $textWidth ) / 2 );
 $textY = ceil( ( $height - $textHeight ) / 2 + $textHeight );
 
 //Create the rectangle with the specified background color
-imageFilledRectangle( $img, 0, 0, $width, $height, $bg_color );
+imagefilledellipse( $img, 0, 0, $width, $height, $bg_color );
 //Create and positions the text
 imagettftext( $img, $fontsize, $text_angle, $textX, $textY, $fg_color, $font, $text );
 
